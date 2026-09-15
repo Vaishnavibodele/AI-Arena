@@ -1279,7 +1279,7 @@ export default function MatchConsoleView() {
                     {/* ROUND 1: Answer Options Cards Displayed on Host (Display-Only for Audience) */}
                     {currentLiveQuestion && currentLiveQuestion.round === 1 && (() => {
                       const seedStr = `${match.id}_${currentLiveQuestion.id}`;
-                      
+
                       // Check if question has real_image_url & ai_image_url (Image Comparison format)
                       if (currentLiveQuestion.real_image_url || currentLiveQuestion.ai_image_url) {
                         const isRealOnLeft = getSeededIsRealOnLeft(seedStr);
